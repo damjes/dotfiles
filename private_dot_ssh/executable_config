@@ -1,0 +1,13 @@
+Host ezn
+	HostName ezn.edu.pl
+	Port 40022
+	User ezn
+
+Host mydebil
+	HostName damj.es
+	user matma6
+
+Host ubuntu
+	HostName 192.168.56.2
+	User root
+	XAuthLocation /opt/X11/bin/xauth
