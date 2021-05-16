@@ -76,6 +76,7 @@ plugins=(
 #	debian
 	git
 	gitignore
+	macports
 	mosh
 	vundle
 	z
