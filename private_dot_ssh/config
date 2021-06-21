@@ -11,3 +11,7 @@ Host ubuntu
 	HostName 192.168.56.2
 	User root
 	XAuthLocation /opt/X11/bin/xauth
+
+Host archezn
+	HostName 10.224.41.2
+	User root
