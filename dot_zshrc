@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 # zmienne
 
-#eval "$(thefuck --alias fek)"
+eval "$(thefuck --alias fek)"
 
 # moje
 export EDITOR="vim"
