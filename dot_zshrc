@@ -135,7 +135,7 @@ alias pip=/usr/local/bin/pip3
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 # Factor
-export PATH=/Applications/factor:"$PATH"
+#export PATH=/Applications/factor:"$PATH"
 
 # LSD
 alias ls='lsd'
