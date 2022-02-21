@@ -71,15 +71,21 @@ export UPDATE_ZSH_DAYS=13 #defaŭlta estas 13
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-#	archlinux
-	brew
-#	debian
 	git
 	gitignore
-	macports
 	mosh
 	vundle
 	z
+	{{ if eq .chezmoi.os "darwin" }}
+		brew
+		macports
+	{{ else if eq .chezmoi.os "linux" }}
+		{{ if eq .chezmoi.osRelease.name "Arch Linux" }}
+			archlinux
+		{{ else }}
+			debian
+		{{ end }}
+	{{ end }}
 )
 
 ZSH_DISABLE_COMPFIX=true
@@ -145,5 +151,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+{{ if eq .chezmoi.os "darwin" -}}
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+{{ end -}}
