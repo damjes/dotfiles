@@ -130,9 +130,10 @@ export PATH="/usr/local/opt/libiconv/bin:$PATH"
 export PATH="/Applications/SWI-Prolog.app/Contents/MacOS:$PATH"
 
 alias t='todo.sh'
-alias python=/usr/local/bin/python3
-alias pip=/usr/local/bin/pip3
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
+#alias python=/usr/local/bin/python3
+#alias pip=/usr/local/bin/pip3
+#alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 # Factor
 #export PATH=/Applications/factor:"$PATH"
