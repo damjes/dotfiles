@@ -18,3 +18,8 @@ Host archezn
 
 Host arch
 	HostName arch.damjes
+
+Host swipl-vm
+	HostName 192.168.56.6
+	User damjes
+	XAuthLocation /opt/X11/bin/xauth
