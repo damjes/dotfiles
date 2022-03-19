@@ -155,6 +155,13 @@ else
 	echo "lsd mankas" >&2
 fi
 
+# bat (akk batcat)
+if type bat >/dev/null; then
+	alias cat='bat'
+else
+	echo "bat mankas" >&2
+fi
+
 {{ if eq .chezmoi.os "darwin" -}}
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
