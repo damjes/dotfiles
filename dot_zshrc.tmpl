@@ -145,11 +145,15 @@ alias t='todo.sh'
 #export PATH=/Applications/factor:"$PATH"
 
 # LSD
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+if type lsd > dev null; then
+	alias ls='lsd'
+	alias l='ls -l'
+	alias la='ls -a'
+	alias lla='ls -la'
+	alias lt='ls --tree'
+else
+	echo "lsd mankas" >&2
+fi
 
 {{ if eq .chezmoi.os "darwin" -}}
 # iTerm2
