@@ -15,6 +15,8 @@ Host ubuntu
 Host archezn
 	HostName 10.224.41.2
 	User root
+	LocalForward 1884 localhost:1883
+	LocalForward 1885 localhost:15672
 
 Host arch
 	HostName arch.damjes
