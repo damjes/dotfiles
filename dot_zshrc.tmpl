@@ -163,8 +163,3 @@ elif type batcat >/dev/null; then
 else
 	echo "bat mankas" >&2
 fi
-
-{{ if eq .chezmoi.os "xyz.darwin" -}}
-# iTerm2
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-{{ end -}}
