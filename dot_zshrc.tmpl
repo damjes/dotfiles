@@ -120,11 +120,11 @@ source $ZSH/oh-my-zsh.sh
 
 # zmienne
 
-eval "$(thefuck --alias fek)"
-
-# moje
 export EDITOR="vim"
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+# thefuck
+eval "$(thefuck --alias fek)"
 
 # ruby
 export PATH=$PATH:$(ruby -e "puts Gem.user_dir")/bin
