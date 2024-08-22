@@ -25,3 +25,7 @@ Host swipl-vm
 	HostName 192.168.56.6
 	User damjes
 	XAuthLocation /opt/X11/bin/xauth
+
+Host karbonado
+	HostName karbonado.damj.es
+	User root
