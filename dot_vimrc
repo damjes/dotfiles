@@ -28,7 +28,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " MIAJ
 Plugin 'tpope/vim-fugitive'
-Plugin 'adimit.prolog-vim'
+Plugin 'adimit/prolog.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
