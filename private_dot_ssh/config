@@ -16,3 +16,8 @@ Host archezn
 Host karbonado
 	HostName karbonado.damj.es
 	User root
+
+Host mikrus
+	HostName frog02.mikr.us
+	User frog
+	Port 11173
