@@ -17,7 +17,12 @@ Host karbonado
 	HostName karbonado.damj.es
 	User root
 
-Host mikrus
+Host mikrus-frog
 	HostName frog02.mikr.us
 	User frog
 	Port 11173
+
+Host mikrus
+	HostName srv17.mikr.us
+	User root
+	Port 10227
