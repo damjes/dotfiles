@@ -138,24 +138,6 @@ eval "$(thefuck --alias fek)"
 export PATH=$PATH:$(ruby -e "puts Gem.user_dir")/bin
 export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
 
-# iconv
-export PATH="/usr/local/opt/libiconv/bin:$PATH"
-
-# SWI-Prolog
-#export PATH="/Applications/SWI-Prolog.app/Contents/MacOS:$PATH"
-
-# Rust
-#export PATH="$HOME/.cargo/bin:$PATH"
-
-#alias t='todo.sh'
-
-#alias python=/usr/local/bin/python3
-#alias pip=/usr/local/bin/pip3
-#alias get_idf='. $HOME/esp/esp-idf/export.sh'
-
-# Factor
-#export PATH=/Applications/factor:"$PATH"
-
 # LSD
 if type lsd >/dev/null; then
 	alias ls='lsd'
