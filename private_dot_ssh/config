@@ -13,15 +13,6 @@ Host archezn
 	LocalForward 1884 localhost:1883
 	LocalForward 1885 localhost:15672
 
-Host karbonado
-	HostName karbonado.damj.es
-	User root
-
-Host mikrus-frog
-	HostName frog02.mikr.us
-	User frog
-	Port 11173
-
 Host mikrus
 	HostName srv17.mikr.us
 	User root
