@@ -162,4 +162,6 @@ export npm_config_prefix="$HOME/.local"
 
 # Angular
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+if type ng >/dev/null; then
+	source <(ng completion script)
+fi
