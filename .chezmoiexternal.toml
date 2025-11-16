@@ -15,3 +15,4 @@
 	type = "file"
 	url = "https://raw.githubusercontent.com/damjes/damjesap/refs/heads/master/apo/damjesap"
 	refreshPeriod = "168h"
+	executable = true
