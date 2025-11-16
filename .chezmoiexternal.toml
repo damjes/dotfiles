@@ -11,3 +11,7 @@
 	exact = true
 	stripComponents = 1
 	refreshPeriod = "168h"
+["bin/damjesap"]
+	type = "file"
+	url = "https://raw.githubusercontent.com/damjes/damjesap/refs/heads/master/apo/damjesap"
+	refreshPeriod = "168h"
