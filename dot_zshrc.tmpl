@@ -93,29 +93,24 @@ ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 if [[ $- == *i* ]]; then
-    CHEZ_LAST_UPDATE_FILE="$HOME/.cache/chezmoi_last_update"
-    CHEZ_COOLDOWN=604800  # 7 tagoj
+	CHEZ_LAST_UPDATE_FILE="$HOME/.cache/chezmoi_last_update"
+	CHEZ_COOLDOWN=604800  # 7 tagoj
 
-    [[ -f "$CHEZ_LAST_UPDATE_FILE" ]] || echo 0 > "$CHEZ_LAST_UPDATE_FILE"
+	[[ -f "$CHEZ_LAST_UPDATE_FILE" ]] || echo 0 > "$CHEZ_LAST_UPDATE_FILE"
 
-    LAST_UPDATE=$(<"$CHEZ_LAST_UPDATE_FILE")
-    NOW=$(date +%s)
+	LAST_UPDATE=$(<"$CHEZ_LAST_UPDATE_FILE")
+	NOW=$(date +%s)
 
-    if (( NOW - LAST_UPDATE > CHEZ_COOLDOWN )); then
-        echo "[chezmoi] Semajno pasis – mi kontrolas…"
-
-        # doctor musi przejść; update tylko wtedy, kiedy exit code == 0
-        if chezmoi doctor --verbose; then
-            echo "[chezmoi] Doctor OK, mi ĝisdatigas…"
-            if chezmoi update; then
-                date +%s > "$CHEZ_LAST_UPDATE_FILE"
-            else
-                echo "[chezmoi] Ĝisdatigo fiaskis."
-            fi
-        else
-            echo "[chezmoi] Doctor fiaskis."
-        fi
-    fi
+	if (( NOW - LAST_UPDATE > CHEZ_COOLDOWN )); then
+		echo "[chezmoi] Semajno pasis – mi kontrolas…"
+		if chezmoi update; then
+			date +%s > "$CHEZ_LAST_UPDATE_FILE"
+		else
+			echo "[chezmoi] Ĝisdatigo fiaskis."
+		fi
+	else
+		echo "[chezmoi] Doctor fiaskis."
+	fi
 fi
 
 # User configuration
@@ -179,7 +174,7 @@ fi
 if type bat >/dev/null; then
 	alias cat='bat'
 elif type batcat >/dev/null; then
-        alias cat='batcat'
+		alias cat='batcat'
 else
 	echo "bat mankas" >&2
 fi
