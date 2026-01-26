@@ -3,6 +3,10 @@ Host ezn
 	Port 40022
 	User ezn
 
+Host mudle
+	HostName 10.224.41.235
+	User root
+
 Host mydebil
 	HostName damj.es
 	user matma6
