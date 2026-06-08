@@ -21,3 +21,7 @@ Host mikrus
 	HostName srv17.mikr.us
 	User root
 	Port 10227
+
+Host pidp11
+	HostName 192.168.1.11
+	User pi
