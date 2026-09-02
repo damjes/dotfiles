@@ -1,0 +1,7 @@
+include "%L"
+
+# z̈ - nie ma precomponowanego kodpointu w Unicode (sprawdzone),
+# więc wynik to z + U+0308 (combining diaeresis).
+# Używa dead_diaeresis, który już istnieje w Colemaku na AltGr+D (<AC05>).
+<dead_diaeresis> <z> : "z̈"
+<dead_diaeresis> <Z> : "Z̈"
