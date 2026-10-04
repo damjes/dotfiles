@@ -1,19 +1,24 @@
 xkb_symbols "damjes" {
-    include "us(colemak)"
-    name[Group1]= "Damjesa Kolemako";
-
-    // , key: level3 -> dead_belowcomma (AltGr+, potem s/t = ș/ț), level4 -> dead_cedilla (Shift+AltGr+, potem s/t = ş/ţ)
-    key <AB08> { [ comma, less, dead_belowcomma, dead_cedilla ] };
-
-    // . key: level3 dead_abovedot ZOSTAJE, level4 (wolny filler ~) -> · (pod kropką)
-    key <AB09> { [ period, greater, dead_abovedot, U00B7 ] };
-
-    // 9 key: level3 -> „ (polski otwierający), level4 -> ‘ (pojedynczy)
-    key <AE09> { [ 9, parenleft, U201E, leftsinglequotemark ] };
-
-    // 0 key: level3 -> ” (polski zamykający), level4 -> ’ (pojedynczy)
-    key <AE10> { [ 0, parenright, rightdoublequotemark, rightsinglequotemark ] };
-
-    // m key: level3 dead_macron ZOSTAJE, level4 (wolny filler ~) -> ॐ (prawdziwy Om, Devanagari)
-    key <AB07> { [ m, M, dead_macron, U0950 ] };
+	include "us(colemak)"
+	name[Group1]= "Damjesa Kolemako";
+	
+	// , key: level3 -> dead_belowcomma (AltGr+, potem s/t = ș/ț), level4 -> dead_cedilla (Shift+AltGr+, potem s/t = ş/ţ)
+	key <AB08> { [ comma, less, dead_belowcomma, dead_cedilla ] };
+	
+	// . key: level3 dead_abovedot ZOSTAJE, level4 (wolny filler ~) -> · (pod kropką)
+	key <AB09> { [ period, greater, dead_abovedot, U00B7 ] };
+	
+	// 9 key: level3 -> „ (polski otwierający), level4 -> ‘ (pojedynczy)
+	key <AE09> { [ 9, parenleft, U201E, leftsinglequotemark ] };
+	
+	// 0 key: level3 -> ” (polski zamykający), level4 -> ’ (pojedynczy)
+	key <AE10> { [ 0, parenright, rightdoublequotemark, rightsinglequotemark ] };
+	
+	// m key: level3 dead_macron ZOSTAJE, level4 (wolny filler ~) -> ॐ (prawdziwy Om, Devanagari)
+	key <AB07> { [ m, M, dead_macron, U0950 ] };
+	
+	key <SPCE> {
+		type[Group1] = "FOUR_LEVEL",
+		[ space, space, Multi_key, nobreakspace ]
+	};
 };
